@@ -1,0 +1,140 @@
+
+
+/* HOME =================== */
+#home {
+    overflow: hidden;
+    min-height: 100vh;
+
+
+    position: relative;
+    z-index: 2;
+    background: var(--green-white);
+}
+
+#home img.terra {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+#home .content {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    gap: 5rem;
+}
+
+#home .content .topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+#home .content .text img {
+    width: 5rem;
+}
+
+#home .content h1 {
+    color: var(--green-black);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+#home .content h1 span {
+    font-weight: 600;
+    color: var(--green);
+}
+
+#home .content p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+#home .content a {
+    text-decoration: none;
+}
+
+#home .content a button {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+    border: none;
+    padding: 1rem 2rem;
+    background: var(--gradient);
+    color: #fff;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+
+#home .image {
+    display: flex;
+    justify-content: center;
+}
+
+#home .image img {
+    width: 50%;
+    margin-bottom: -20%;
+    position: relative;
+    z-index: 3;
+}
+
+@media (min-width: 1080px) {  
+    header#home {
+        height: 100vh;
+        padding-block: initial;
+    }
+
+    header#home .text {
+        margin-top: -10%;
+    }
+
+    header#home img.terra {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -30%;
+
+        filter: blur(3px);
+    }
+ 
+    header#home .content {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    header#home .content .text img {
+        width: 7rem;
+        margin-bottom: 2rem;
+    }
+
+    header#home .content .text h1 {
+        font-size: 6rem;
+    }
+
+    header#home .content .text p {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    header#home .content .image img {
+        width: 120%;
+        margin-bottom: -10%;
+    }
+}
+   

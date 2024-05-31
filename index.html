@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adubo Carajá</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./assets/logo_white.png" type="image/x-icon">
+</head>
+<body>
+
+    <nav id="navigation" class="">
+
+        <div class="wrapper">
+
+            <a class="logo" href="#home">
+                <img src="./assets/logoBranca.svg" alt="">
+            </a>
+            
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#sobre">Sobre nós</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="">Downloads</a></li>
+                    <li><a onclick="closeMenu()" href="#contato">Contato</a></li>
+                    
+                </ul>
+
+                <a href="#home"><img class="logo" onclick="closeMenu()" src="./assets/logo ns.svg" alt=""></a>
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>
+           
+    </nav>
+
+    <header id="home">
+        <div class="wrapper">
+            <div class="content">
+                <div class="text">
+                    <img src="./assets/logoIcone.svg" alt="">
+                    <h1>Cultive o sucesso com <span>Adubo Carajá</span>.</h1>
+
+                    <p>Com anos de experiência e dedicação, nos especializamos na produção, comercialização e distribuição de fertilizantes de alta qualidade. </p>
+
+                    <a href="#"><button>Descubra nossos serviços <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                </div>
+                <div class="image">
+                    <img class="planta" src="./assets/PLANTINHA.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <img class="terra" src="./assets/TERRA (1).png" alt="">
+    </header>
+
+    <section id="services">
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <span>SERVIÇOS</span>
+                    <h2>Conheça nossos serviços</h2>
+                </header>
+
+                <div class="cards">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/12737.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Produção de Fertilizantes</h3>
+                            <p>Oferecemos uma linha completa de fertilizantes, incluindo as essenciais fórmulas NPK, meticulosamente balanceadas para atender às necessidades específicas de cada tipo de cultura agrícola.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/2151205731.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Comercialização de Fertilizantes</h3>
+                            <p>Nossos produtos são o resultado de pesquisas avançadas e de uma tecnologia inovadora, garantindo que cada aplicação maximize a absorção de nutrientes pelas plantas.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/37874.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Distribuição de Fertilizantes</h3>
+                            <p>Com Adubo Carajá, você tem a garantia de produtos que não só alimentam suas plantas, mas também fortalecem o solo, aumentando sua produtividade e rentabilidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html> 

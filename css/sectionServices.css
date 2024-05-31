@@ -1,0 +1,88 @@
+#services {
+    background-color: var(--color-white);
+}
+
+#services header {
+    text-align: left;
+
+    margin-bottom: 4rem;
+}
+
+#services header > span {
+    font-size: 1.4rem;
+    color: var(--green);
+    font-weight: 500;
+}
+
+#services header h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--green-black);
+}
+
+#services .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 3rem;
+}
+
+#services .card {
+    text-align: left;
+
+    display: grid;
+    grid-template-columns: 3fr 1.3fr;
+    grid-template-areas: "A B";
+    gap: 3rem;
+}
+
+#services .card .image img {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), transparent 100%);
+
+}
+
+#services .card .image {
+    position: relative;
+
+    border-radius: 1rem;
+
+    grid-area: B;
+}
+
+#services .card .image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    background: linear-gradient(to bottom, transparent, #000000);
+}
+
+#services .card .text {
+    padding-block: 1rem;
+}
+
+#services .card h3 {
+    font-size: 2rem;
+    color: var(--green);
+
+    position: relative;
+    z-index: 6;
+}
+
+#services .card p {
+    font-size: 1.6rem;
+    color: var(--green-black);
+    font-weight: 300;
+}
