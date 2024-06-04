@@ -30,12 +30,9 @@
     align-items: start;
     text-align: left;
     gap: 5rem;
-}
 
-#home .content .topics {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5rem;
+    position: relative;
+    z-index: 5;
 }
 
 #home .content .text img {
@@ -55,11 +52,34 @@
     color: var(--green);
 }
 
-#home .content p {
+#home .content h3 {
     font-size: 1.6rem;
     line-height: 1.6;
     font-weight: 400;
     margin-bottom: 2rem;
+}
+
+#home .content .topics {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: 400;
+
+    margin-bottom: 2rem;
+}
+
+#home .content .topics p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+
+#home .content .topics p ion-icon {
+    color: #fff;
+    background: var(--gradient);
+    border-radius: 50%;
+    padding: .5rem;
 }
 
 #home .content a {
@@ -95,6 +115,8 @@
     header#home {
         height: 100vh;
         padding-block: initial;
+
+        border-radius: 0 0 15rem 0;
     }
 
     header#home .text {
@@ -127,9 +149,18 @@
         font-size: 6rem;
     }
 
-    header#home .content .text p {
-        font-size: 2rem;
+    header#home .content .text h3 {
         margin-bottom: 4rem;
+        font-size: 2rem;
+    }
+
+    header#home .content .text .topics {
+        margin-bottom: 4rem;
+        gap: 1.5rem;
+    }
+
+    header#home .content .text .topics p {
+        font-size: 1.6rem;
     }
 
     header#home .content .image img {
