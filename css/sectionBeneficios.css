@@ -1,0 +1,145 @@
+#beneficios {
+    background-color: var(--green-white);
+
+    position: relative;
+}
+
+#beneficios img.logo {
+    display: inherit;
+
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+
+    width: 70%;
+}
+
+#beneficios img.planta {
+    display: inherit;
+    position: absolute;
+    left: -2rem;
+    top: 20%;
+    z-index: 0;
+
+    transform: rotate(360deg);
+}
+
+#beneficios header {
+    text-align: left;
+
+    margin-bottom: 6rem;
+}
+
+#beneficios header > span {
+    font-size: 1.4rem;
+    color: var(--green);
+    font-weight: 500;
+}
+
+#beneficios header h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--green-black);
+}
+
+#beneficios .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4rem;
+}
+
+#beneficios .cards .card {
+    border-radius: 1rem;
+    padding: 2rem;
+    padding-top: 6rem;
+    position: relative;
+    background: var(--gradient-2);
+
+    box-shadow:  14px 14px 29px #cfd9c4,
+             -14px -14px 29px #c4c4c4a0;
+}
+
+#beneficios .cards .card .text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: left;
+}
+
+#beneficios .cards .card img {
+    width: 7rem;
+    position: absolute;
+    left: 0;
+    top: -2.5rem;
+    background: var(--gradient);
+    padding: 1rem;
+    border-radius: 50%;
+
+    box-shadow:  6px 6px 12px #369400,
+    -6px -6px 12px #ffffff;
+}
+
+#beneficios .cards .card h3 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#beneficios .cards .card p {
+    font-size: 1.6rem;
+    color: #eafade;
+    font-weight: 300;
+}
+
+@media (min-width: 1080px) {
+    section#beneficios header {
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+    
+    section#beneficios header > span {
+        font-size: 1.6rem;
+    }
+    
+    section#beneficios header h2 {
+        font-size: 4rem;
+    }
+    
+    section#beneficios .content .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 2rem;
+    }
+
+    section#beneficios .content .cards .card:nth-child(2),
+    section#beneficios .content .cards .card:nth-child(4) {
+        transform: translateY(20px);
+    }
+    
+    section#beneficios .content .cards .card {
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        background-color: #f7f5f5e2;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    
+        border: 1px solid #e8e8e8;
+    }
+
+    section#beneficios .cards .card img {
+        border: 1px solid #fff;
+    }
+}
+

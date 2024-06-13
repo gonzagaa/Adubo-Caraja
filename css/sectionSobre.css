@@ -1,0 +1,124 @@
+#sobre {
+    background: var(--gradient-2);
+    position: relative;
+}
+
+#sobre header h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+#sobre .cards  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin-top: 2rem;
+}
+
+#sobre img.principal {
+    margin-top: 4rem;
+    width: 90%;
+    object-fit: cover;
+    aspect-ratio: 9/7;
+    border-radius: 2rem;
+
+    border: 3px solid var(--color-white);
+}
+
+#sobre .page p {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+#sobre .page p span {
+    font-weight: 600;
+}
+
+#sobre .navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+#sobre .navigation button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+}
+
+#sobre .navigation button ion-icon {
+    color: var(--green);
+    font-size: 3rem;
+    line-height: 1.6;
+
+    position: relative;
+    padding: 1rem;
+}
+
+#sobre .navigation button ion-icon::before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+#sobre .navigation button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+@media (min-width: 1080px) {
+    section#sobre {
+        padding-block: 0;
+    }
+    section#sobre .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section#sobre img.principal {
+        aspect-ratio: initial;
+        margin-top: initial;
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        height: 100vh;
+
+        filter: brightness(.8);
+    }
+
+    section#sobre .content .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section#sobre .content header h2 {
+        font-size: 4rem;
+    }
+
+    section#sobre .page {
+        padding-inline: 5rem;
+    }
+
+    section#sobre .page p {
+        font-size: 1.8rem;
+    }
+}

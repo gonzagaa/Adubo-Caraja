@@ -141,30 +141,30 @@
     }
 
     header#home .content .text img {
-        width: 7rem;
-        margin-bottom: 2rem;
+        width: 5rem;
+        margin-bottom: 1rem;
     }
 
     header#home .content .text h1 {
-        font-size: 6rem;
+        font-size: 4.5rem;
     }
 
     header#home .content .text h3 {
-        margin-bottom: 4rem;
-        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
     }
 
     header#home .content .text .topics {
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
         gap: 1.5rem;
     }
 
     header#home .content .text .topics p {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     header#home .content .image img {
-        width: 120%;
+        width: 90%;
         margin-bottom: -10%;
     }
 }
