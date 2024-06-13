@@ -168,4 +168,9 @@
         margin-bottom: -10%;
     }
 }
-   
+
+@media (min-width: 1700px) {
+    header#home .content .image img {
+        width: 120%;
+    }
+}
