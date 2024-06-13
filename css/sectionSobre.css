@@ -122,3 +122,13 @@
         font-size: 1.8rem;
     }
 }
+
+@media (min-width: 1700px) {
+    section#sobre .content header h2 {
+        font-size: 5rem;
+    }
+
+    section#sobre .page p {
+        font-size: 2rem;
+    }
+}

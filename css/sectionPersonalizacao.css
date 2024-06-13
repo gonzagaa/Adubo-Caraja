@@ -10,6 +10,8 @@
     border-radius: 4rem;
     overflow: hidden;
     position: relative;
+
+    border: 2px solid var(--green);
 }
 
 #personalizacao .image {
@@ -26,7 +28,7 @@
 }
 
 #personalizacao .container .text {
-    padding: 3rem;
+    padding-inline: 4rem;
 }
 
 #personalizacao .container h2 {
