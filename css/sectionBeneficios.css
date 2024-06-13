@@ -1,5 +1,5 @@
 #beneficios {
-    background-color: var(--green-white);
+    background-color: #fff;
 
     position: relative;
 }
@@ -58,10 +58,14 @@
     padding: 2rem;
     padding-top: 6rem;
     position: relative;
-    background: var(--gradient-2);
 
-    box-shadow:  14px 14px 29px #cfd9c4,
-             -14px -14px 29px #c4c4c4a0;
+    background-color: #f7f5f5e2;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid #e8e8e8;
+
+    box-shadow:  17px 17px 35px #d9d9d9,
+    -17px -17px 35px #ffffff;
 }
 
 #beneficios .cards .card .text {
@@ -80,21 +84,21 @@
     background: var(--gradient);
     padding: 1rem;
     border-radius: 50%;
-
-    box-shadow:  6px 6px 12px #369400,
-    -6px -6px 12px #ffffff;
+    
+    box-shadow:  17px 17px 35px #d1d1d1,
+    -17px -17px 35px #ffffff;
 }
 
 #beneficios .cards .card h3 {
     font-size: 2rem;
-    color: #fff;
+    color: var(--green);
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
 #beneficios .cards .card p {
     font-size: 1.6rem;
-    color: #eafade;
+    color: var(--green-black);
     font-weight: 300;
 }
 
