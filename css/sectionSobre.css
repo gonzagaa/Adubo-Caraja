@@ -4,7 +4,7 @@
 }
 
 #sobre header h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 2rem;
     color: var(--color-white);
     font-weight: 600;
@@ -33,8 +33,8 @@
 #sobre .page p {
     color: #ffffff;
     font-weight: 300;
-    font-size: 1.6rem;
-    line-height: 1.5;
+    font-size: 1.8rem;
+    line-height: 1.6;
 }
 
 #sobre .page p span {

@@ -30,7 +30,7 @@
 }
 
 #personalizacao .container h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--green);
     font-weight: 700;
     margin-bottom: 1rem;
@@ -39,6 +39,8 @@
 #personalizacao .container p {
     color: var(--color-black);
     font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.5;
     margin-bottom: 2rem;
 }
 
@@ -48,7 +50,7 @@
     color: var(--green-white);
     background: var(--gradient);
     border-radius: 3rem;
-
+    font-size: 1.8rem;
     transition: all 200ms ease-in-out;
 }
 
