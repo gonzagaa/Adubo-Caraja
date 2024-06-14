@@ -1,0 +1,101 @@
+#contato {
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+#contato .wrapper {
+    position: relative;
+}
+
+#contato header {
+    margin-bottom: 2rem;
+}
+
+#contato header > span {
+    font-size: 1.4rem;
+    color: var(--green);
+    font-weight: 500;
+}
+
+#contato header h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--green-black);
+}
+
+#contato .text p {
+    font-size: 1.6rem;
+    color: var(--green-black);
+    font-weight: 300;
+    line-height: 1.6;
+
+    margin-bottom: 3rem;
+}
+
+#contato .text p span {
+    font-weight: 500;
+}
+
+#contato .text a button {
+    background: var(--gradient);
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    color: var(--color-white);
+    border-radius: 3rem;
+    border: none;
+}
+
+#contato img.folha {
+    display: none;
+}
+
+@media (min-width: 1080px) {
+    section#contato header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    section#contato header > span {
+        font-size: 1.6rem;
+    }
+    
+    section#contato header h2 {
+        font-size: 4rem;
+    }
+
+    section#contato .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section#contato .text p {
+        font-size: 2rem;
+        width: 80%;
+    }
+
+    section#contato .text a button {
+        font-size: 1.8rem;
+    }   
+
+    section#contato img.planta,
+    section#contato img.folha {
+        display: inherit;
+        position: absolute;
+    }
+
+    section#contato img.folha {
+        width: 6rem;
+        filter: blur(1.2px);
+        opacity: .8;
+        top: 0;
+        left: 20%;
+    }
+
+    section#contato img.folha.dois {
+        top: 80%;
+        left: 80%;
+    }
+}
