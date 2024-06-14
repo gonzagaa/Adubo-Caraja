@@ -1,0 +1,48 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+
+    margin-top: 9rem;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #22b716;
+    color: white;
+}
+th.side-header {
+    background-color: #22b716;
+    color: white;
+    width: 50px;
+    padding: 8px;
+    text-align: center;
+}
+td.side-header {
+    background-color: #22b716;
+    color: white;
+    text-align: center;
+}
+tbody tr:nth-child(even) {
+    background-color: #f6f6fb;
+}
+tbody tr:nth-child(odd) {
+    background-color: #f3ffe6;
+}
+
+/* Media query para dispositivos com largura menor que 768px */
+@media (max-width: 767px) {
+    table {
+        overflow-x: auto; /* Força o scroll horizontal */
+        -webkit-overflow-scrolling: touch; /* Suporte a scroll suave em dispositivos iOS */
+    }
+
+    th, td {
+    white-space: nowrap; /* Impede que o texto quebre para baixo */
+
+    }
+}

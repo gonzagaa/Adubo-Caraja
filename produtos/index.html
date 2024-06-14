@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adubo Carajá</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="./produtos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="../assets/logo_white.png" type="image/x-icon">
+</head>
+<body>
+
+    <nav id="navigation" class="">
+
+        <div class="wrapper">
+
+            <a class="logo" href="#home">
+                <img src="./assets/logoBranca.svg" alt="">
+            </a>
+            
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="#sobre">Sobre nós</a></li>
+                    <li><a onclick="closeMenu()" href="#contato">Contato</a></li>
+                </ul>
+
+                <a href="#home"><img class="logo" onclick="closeMenu()" src="" alt=""></a>
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>
+           
+    </nav>
+
+    <table>
+        <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Esta é a coluna A</th>
+                <th>Esta é a coluna B</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="side-header"></td>
+                <td>Ácido Bórico - Scs 25kg ou Bags 1.000kg,</td>
+                <td>SAL SOLÚVEL</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Ácido Bórico c/ K2O - Scs 25kg ou Bags 1.000kg,</td>
+                <td>SAL SOLÚVEL</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Ácido Fosfórico 30% (RAF) - IBC 1.000kg,</td>
+                <td>FERTILIZANTE MINERAL SIMPLES</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Ácido Fosfórico 50% (INDL) - IBC 1.000kg,</td>
+                <td>FERTILIZANTE MINERAL SIMPLES</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Ácido Fosfórico 61% (Food Grade) - IBC 1.000kg,</td>
+                <td>FERTILIZANTE MINERAL SIMPLES</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Ácido Nitríco 53% - IBC 1.000kg,</td>
+                <td>FERTILIZANTE MINERAL SIMPLES</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Ácido Nitríco 60% - IBC 1.000kg,</td>
+                <td>FERTILIZANTE MINERAL SIMPLES</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Ácido Sulfúrico 98% - Granel,</td>
+                <td>FERTILIZANTE MINERAL SIMPLES</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Cloreto de Potássio Gr - Scs 25kg ou Bags 1.000kg,</td>
+                <td>CONDICIONADOR</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Cloreto de Potássio Pó Branco - Scs 25kg ou Bags 1.000kg,</td>
+                <td>CONDICIONADOR</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Condocionador de Solo - Granel,</td>
+                <td>CORRETIVO</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Condocionador de Solo - Scs 25kg ou Bags 1.000kg,</td>
+                <td>CORRETIVO</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Eco Corretivo Calcítico - PN 90% - Granel,</td>
+                <td>FERTILIZANTE MINERAL COMPLEXO</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Eco Corretivo Calcítico - PN 90% - Scs 25kg ou Bags 1.000kg,</td>
+                <td>FERTILIZANTE MINERAL COMPLEXO</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Fert. Mineral Complexo (Manganês 12%),</td>
+                <td>FERTILIZANTE MINERAL COMPLEXO</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Fert. Mineral Complexo (Zinco 15%),</td>
+                <td>FERTILIZANTE MINERAL COMPLEXO</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Fert. Mineral Misto (Zinco 40%),</td>
+                <td>FERTILIZANTE MINERAL MISTO</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Fertilizante Composto Orgânico (Classe A) - Granel,</td>
+                <td>COMPOSTO ORGÂNICO</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Fertilizante Composto Orgânico (Classe A) - Scs 25kg ou Bags 1.000kg,</td>
+                <td>COMPOSTO ORGÂNICO</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Fosfato Monoamônio GR - MAP (11.52) - Scs 25kg ou Bags 1.000kg,</td>
+                <td>FERTILIZANTE MINERAL SIMPLES</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Fosfato Monoamônio Pó - MAP (10,5-54) - Scs 25kg ou Bags 1.000kg,</td>
+                <td>FERTILIZANTE MINERAL SIMPLES</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Fosfato Monoamônio Purificado (11.61.00) - Scs 25kg,</td>
+                <td>FERTILIZANTE MINERAL SIMPLES</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Fosfato Natural Reativo 25% - Bags 1.000kg,</td>
+                <td>FERTILIZANTE MINERAL SIMPLES</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Fosfato Natural Reativo 25% - Granel,</td>
+                <td>FERTILIZANTE MINERAL SIMPLES</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Fosfato Natural Reativo 27% - Bags 1.000kg,</td>
+                <td>FERTILIZANTE MINERAL SIMPLES</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>Fosfato Natural Reativo 27% - Granel,</td>
+                <td>FERTILIZANTE MINERAL SIMPLES</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>GESSO Mag - Granel (Peneirado),</td>
+                <td>CONDICIONADOR</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>GESSO Mag - Granel (Trinchado),</td>
+                <td>CONDICIONADOR</td>
+              </tr>
+              <tr>
+                <td class="side-header"></td>
+                <td>GESSO Mag - Scs de 25kg,</td>
+                <td>CONDICIONADOR</td>
+              </tr>
+              <tr>
+                <tr>
+                    <td class="side-header"></td>
+                    <td>Molibdato de Sódio 39% - Scs 25kg ou Bags 1.000kg,</td>
+                    <td>SOLÚVEL</td>
+              <tr>
+                
+      </table>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1000,
+            }
+        );
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html> 
