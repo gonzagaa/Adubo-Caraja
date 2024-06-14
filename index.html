@@ -5,6 +5,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adubo Carajá</title>
@@ -25,11 +27,9 @@
             <div class="menu">
                 <ul>
                     <li><a onclick="closeMenu()" href="#home">Home</a></li>
-                    <li><a onclick="closeMenu()" href="#sobre">Sobre nós</a></li>
                     <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
-                    <li><a onclick="closeMenu()" href="">Downloads</a></li>
+                    <li><a onclick="closeMenu()" href="#sobre">Sobre nós</a></li>
                     <li><a onclick="closeMenu()" href="#contato">Contato</a></li>
-             
                 </ul>
 
                 <a href="#home"><img class="logo" onclick="closeMenu()" src="" alt=""></a>
@@ -64,20 +64,22 @@
         <div class="wrapper">
             <div class="content">
                 <div class="text">
-                    <img src="./assets/logoIcone.svg" alt="">
-                    <h1>Cultive o sucesso com <span>Adubo Carajá</span>.</h1>
+                    <img data-aos="fade-right" src="./assets/logoIcone.svg" alt="">
+                    <h1 data-aos="fade-right">Cultive o sucesso com <span>Adubo Carajá</span>.</h1>
 
-                    <h3>Empresa responsável e sustentável com o meio ambiente</h3>
+                    <h3 data-aos="fade-right">Empresa responsável e sustentável com o meio ambiente</h3>
 
-                    <div class="topics">
+                    <div data-aos="fade-right" class="topics">
                         <p><ion-icon name="checkmark-outline"></ion-icon> Fertilizantes mineirais</p>
                         <p><ion-icon name="checkmark-outline"></ion-icon> Fertilizantes organominerais</p>
                         <p><ion-icon name="checkmark-outline"></ion-icon> Industrialização</p>
                     </div>
 
-                    <a href="#"><button>Descubra nossos serviços <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                    <div data-aos="fade-right" class="button">
+                        <a href="#"><button>Descubra nossos serviços <ion-icon name="chevron-forward-outline"></ion-icon></button></a>
+                    </div>
                 </div>
-                <div class="image">
+                <div data-aos="fade-up" class="image">
                     <img class="planta" src="./assets/PLANTINHA.png" alt="">
                 </div>
             </div>
@@ -89,13 +91,13 @@
     <section id="services">
         <div class="wrapper">
             <div class="content">
-                <header>
+                <header data-aos="fade-up">
                     <span>SERVIÇOS</span>
                     <h2>Conheça nossos serviços</h2>
                 </header>
 
                 <div class="cards">
-                    <div class="card">
+                    <div data-aos="fade-up-left" class="card">
                         <div class="text">
                             <div class="image"><img src="./assets/icons/Fertilizantes organominerais.png" alt=""></div>
                             <h3>Fertilizantes mineirais e organominerais</h3>
@@ -103,7 +105,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="fade-up" class="card">
                         <div class="text">
                             <div class="image"><img src="../assets/icons/Industrialização.png" alt=""></div>
                             <h3>Industrialização</h3>
@@ -111,7 +113,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="fade-up-right" class="card">
                         <div class="text">
                             <div class="image"><img src="../assets/icons/Formulação.png" alt=""></div>
                             <h3>Formulação</h3>
@@ -119,7 +121,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="fade-up-left" class="card">
                         <div class="text">
                             <div class="image"><img src="./assets/icons/Mistura.png" alt=""></div>
                             <h3>Mistura</h3>
@@ -127,7 +129,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="fade-up" class="card">
                         <div class="text">
                             <div class="image"><img src="./assets/icons/Ensaque.png" alt=""></div>
                             <h3>Ensaque</h3>
@@ -135,7 +137,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="fade-up-right" class="card">
                         <div class="text">
                             <div class="image"><img src="./assets/icons/Armazenagem de fertilizantes.png" alt=""></div>
                             <h3>Armazenagem de fertilizantes</h3>
@@ -158,31 +160,31 @@
                         <h2>Conheça nossa história</h2>
                     </header>
 
-                    <div class="page" id="page1">
+                    <div data-aos="fade-right" class="page" id="page1">
                         <p>Há quase um século surgira uma fábrica de farinha de osso em uma propriedade margeada pela linha férrea, donde por um desvio chegavam vagões com chifres e ossos, descarte de frigoríficos. Fazia-se cabos de guarda-chuva, pentes e botões, o restante transformavam em farinha de osso produzidas em autoclave, adubo orgânico rico em fósforo. Por anos assim foi, empresa era denominada <span>Bindo Guida e Cia</span>...</p>
                     </div>
                     
-                    <div class="page" id="page2" style="display: none;">
+                    <div data-aos="fade-right" class="page" id="page2" style="display: none;">
                         <p>...O mercado ampliava e agricultura regional demandava não só fósforo de nutriente como também <span>Nitrogênio e Potássio</span>. Partiu-se para se tornar uma misturadora de fertilizante químico, que produziria o <span>ADUBO CARAJÁ</span>. Seu símbolo escolhido foi um índio de uma tribo assim denominada. Foi única indústria no município de Capivari por bom tempo. Em meados de 1957 passou a ser denominada <span>AGRO IMPORTADORA E EXPORTADORA DE FERTILIZANTES S/A</span> e seu símbolo passou a ser um “A” sobreposto em um círculo vermelho em reverência ao Oriente, uma grande admiração do proprietário que mantinha negócios com Japoneses...</p>
                     </div>
                     
-                    <div class="page" id="page3" style="display: none;">
+                    <div data-aos="fade-right" class="page" id="page3" style="display: none;">
                         <p>...Sua denominação foi alterada para <span>AGROIMPEX MATERIAIS AGRÍCOLAS LTDA</span> e é assim até hoje. Em 1994 seus gestores passaram a ser de outro seguimento da mesma família e sua expansão exigia galpão que comportasse descarga de matéria-prima em caminhões basculantes. Sua estrutura que era com pé direito baixo feita para transporte em trem e carroças e depois caminhões toco já não condizia com avanços...</p>
                     </div>
                     
-                    <div class="page" id="page4" style="display: none;">
+                    <div data-aos="fade-right" class="page" id="page4" style="display: none;">
                         <p>...No ano 2000 foi adquirindo terreno em rodovia onde construiu-se galpões condizentes com carretas e melhor acesso, implantou-se uma filial na cidade vizinha de <span>Elias Fausto</span>, município produtor de hortifruti em grande escala e por anos a produção foi significativa e promissora. Passado 60 anos com uma gestão e mais 30 anos da atual, é chegada hora de novo avanço para impulsionar <span>agro negócio</span> e novos gestores...</p>
                     </div>
                     
 
-                    <div class="navigation">
+                    <div data-aos="fade-right" class="navigation">
                         <button id="prevBtn" style="display: none;"><ion-icon name="chevron-back-outline"></ion-icon></button>
                         <button id="nextBtn"><ion-icon name="chevron-forward-outline"></ion-icon></button>
                     </div>
                </div>
             </div>
 
-            <img class="principal" src="./assets/pessoascolhendo.png" alt="imagem da familia feliz">
+            <img data-aos="fade-left" class="principal" src="./assets/pessoascolhendo.png" alt="imagem da familia feliz">
         </div>
 
         <div class="custom-shape-divider-top-1718378563">
@@ -201,7 +203,8 @@
                 </header>
 
                 <div class="cards">
-                    <div class="card">
+                    <div data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" class="card">
                         <div class="text">
                             <div class="image"><img src="./assets/icons/qualidade.png" alt=""></div>
                             <h3>Tempo de Entrega</h3>
@@ -209,7 +212,8 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" class="card">
                         <div class="text">
                             <div class="image"><img src="./assets/icons/pagamento.png" alt=""></div>
                             <h3>Garantia da Qualidade</h3>
@@ -218,7 +222,8 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" class="card">
                         <div class="text">
                             <div class="image"><img src="./assets/icons/frete.png" alt=""></div>
                             <h3>Prazo de Pagamento</h3>
@@ -226,7 +231,8 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" class="card">
                         <div class="text">
                             <div class="image"><img src="./assets/icons/entrega.png" alt=""></div>
                             <h3>Valor de Frete</h3>
@@ -242,14 +248,16 @@
         <div class="wrapper">
            <div class="container">
             <img class="planta" src="./assets/planta.webp" alt="">
-                <div class="image">
+                <div data-aos="zoom-out" class="image">
                     <img src="./assets/CARROUSELIMAGES.png" alt="">
                 </div>
 
                 <div class="text">
-                    <h2>Personalização sob demanda</h2>
-                    <p>Descubra como nossa capacidade de personalização pode transformar seus cultivos. Na Adubo Carajá, oferecemos formulações adaptadas precisamente às suas necessidades, promovendo um crescimento saudável e maximizando seus resultados.</p>
-                    <a href="#"><button>Personalize Agora</button></a>
+                    <h2 data-aos="fade-up">Personalização sob demanda</h2>
+                    <p data-aos="fade-up">Descubra como nossa capacidade de personalização pode transformar seus cultivos. Na Adubo Carajá, oferecemos formulações adaptadas precisamente às suas necessidades, promovendo um crescimento saudável e maximizando seus resultados.</p>
+                    <div data-aos="fade-up" class="button">
+                        <a href="#"><button>Personalize Agora</button></a>
+                    </div>
                 </div>
            </div>
         </div>
@@ -258,14 +266,16 @@
     <section id="contato">
         <div class="wrapper">
             <div class="content">
-                <header>
+                <header data-aos="fade-up">
                     <span>FALE CONOSCO</span>
                     <h2>Estamos aqui pra te ajudar!</h2>
                 </header>
                 
                 <div class="text">
-                    <p>Seja para esclarecer dúvidas, obter mais informações sobre nossos produtos ou discutir suas necessidades específicas, <span>nossa equipe está pronta para atender você</span>. Clique no botão abaixo e fale diretamente conosco pelo WhatsApp. <span>Sua satisfação é nossa prioridade</span>!</p>
-                    <a href="#"><button>Fale conosco</button></a>
+                    <p data-aos="fade-up">Seja para esclarecer dúvidas, obter mais informações sobre nossos produtos ou discutir suas necessidades específicas, <span>nossa equipe está pronta para atender você</span>. Clique no botão abaixo e fale diretamente conosco pelo WhatsApp. <span>Sua satisfação é nossa prioridade</span>!</p>
+                    <div data-aos="fade-up" class="button">
+                        <a href="#"><button>Fale conosco</button></a>
+                    </div>
                 </div>
             </div>
 
@@ -282,9 +292,9 @@
                 <div class="navigation">
                     <h3>Navegação</h3>
                     <p><a href="#home">Home</a></p>
-                    <p><a href="#sobre">Sobre</a></p>
+                    <p><a href="#sobre">Sobre nós</a></p>
                     <p><a href="#services">Serviços</a></p>
-                    <p><a href="#suporte">Contato</a></p>
+                    <p><a href="#contato">Contato</a></p>
                 </div>
     
                 <div class="contato">
@@ -321,6 +331,14 @@
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1500,
+            }
+        );
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./script.js"></script>
