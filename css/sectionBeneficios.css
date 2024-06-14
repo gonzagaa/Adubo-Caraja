@@ -1,5 +1,6 @@
 #beneficios {
     background-color: #fff;
+    overflow: hidden;
 
     position: relative;
 }

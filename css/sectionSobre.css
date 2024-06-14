@@ -1,6 +1,8 @@
 #sobre {
     background: var(--gradient-2);
     position: relative;
+    overflow: hidden;
+
 }
 
 .custom-shape-divider-top-1718378563 {
