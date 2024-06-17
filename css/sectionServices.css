@@ -166,19 +166,16 @@
 
     section#services .content .cards .card {
         height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         background-color: #f7f5f5e2;
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
 
         border: 1px solid #e8e8e8;
-    }
-
-    section#services .content .cards .card .text {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
 
     section#services .content .cards .card h3 {
@@ -188,9 +185,5 @@
     section#services .content .cards .card img {
         width: 3rem;
     }
-
-    section#services .content .cards .card a button {
-        font-size: 1.4rem;
-    }
-
+    
 }
