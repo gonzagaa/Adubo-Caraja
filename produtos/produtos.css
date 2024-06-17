@@ -1,3 +1,14 @@
+body#table {
+    background: var(--green-white);
+}
+
+h1 {
+    color: var(--green);
+    font-size: 2rem;
+    margin-top: 10rem;
+    font-weight: 600;
+    display: none;
+}
 
 table {
     width: 100%;
@@ -39,10 +50,15 @@ tbody tr:nth-child(odd) {
     table {
         overflow-x: auto; /* Força o scroll horizontal */
         -webkit-overflow-scrolling: touch; /* Suporte a scroll suave em dispositivos iOS */
+        margin-top: 4rem;
     }
 
     th, td {
     white-space: nowrap; /* Impede que o texto quebre para baixo */
 
+    }
+
+    body#table h1 {
+        display: inherit;
     }
 }

@@ -27,6 +27,13 @@
     transform: rotate(360deg);
 }
 
+#beneficios .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #beneficios header {
     text-align: left;
 
@@ -103,6 +110,32 @@
     font-weight: 300;
 }
 
+#beneficios a {
+    text-decoration: none;
+}
+
+#beneficios a button {
+    border: none;
+    background: var(--gradient);
+    color: var(--color-white);
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    font-size: 1.8rem;
+
+    margin-top: 5rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+#beneficios a button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
 @media (min-width: 1080px) {
     section#beneficios header {
         text-align: center;
@@ -145,6 +178,10 @@
 
     section#beneficios .cards .card img {
         border: 1px solid #fff;
+    }
+
+    section#beneficios a button {
+        margin-top: 8rem;
     }
 }
 
