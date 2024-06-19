@@ -44,6 +44,13 @@
     color: var(--color-white);
     border-radius: 3rem;
     border: none;
+
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+#contato .text a button:hover {
+    filter: brightness(1.2);
 }
 
 #contato img.folha {
