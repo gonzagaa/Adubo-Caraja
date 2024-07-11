@@ -1,5 +1,5 @@
 body#table {
-    background: var(--green-white);
+    background: #ededed;
 }
 
 h1 {
@@ -14,9 +14,21 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    margin-top: 2rem;
+}
 
+.table {
     margin-top: 9rem;
 }
+
+.table h2 {
+    text-align: left;
+}
+
+.wrapper {
+    padding-bottom: 6rem;
+}
+
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
@@ -42,7 +54,12 @@ tbody tr:nth-child(even) {
     background-color: #f6f6fb;
 }
 tbody tr:nth-child(odd) {
-    background-color: #f3ffe6;
+    background-color: #e3e3e3;
+}
+
+tbody tr td:nth-child(1) {
+    background-color: #22b716;
+    color: white;
 }
 
 /* Media query para dispositivos com largura menor que 768px */
