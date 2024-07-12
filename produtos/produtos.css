@@ -17,15 +17,33 @@ table {
     margin-top: 2rem;
 }
 
+.table.um {
+    margin-top: 10rem;
+}
+
 .table {
-    margin-top: 9rem;
+    margin-top: 4rem;
 }
 
-.table h2 {
+.table summary {
     text-align: left;
+    font-size: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #22b716;
+    color: #Fff;
+    font-weight: 400;
+
+    transition: all 200ms ease-in-out;
 }
 
-.wrapper {
+.table summary:hover {
+    cursor: pointer;
+    user-select: none;
+    filter: brightness(1.1);
+}
+
+.wrapper.produtos {
     padding-bottom: 6rem;
 }
 
@@ -71,8 +89,13 @@ tbody tr td:nth-child(1) {
     }
 
     th, td {
-    white-space: nowrap; /* Impede que o texto quebre para baixo */
+        white-space: nowrap; /* Impede que o texto quebre para baixo */
+    }
 
+    tbody tr td:nth-child(2) {
+        max-width: 15rem;
+        padding-inline: 1rem;
+        white-space: inherit;
     }
 
     body#table h1 {
