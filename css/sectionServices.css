@@ -158,10 +158,16 @@
         font-size: 4rem;
     }
 
-    section#services .content .cards {
+    section#services .content .cards .row-1 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    section#services .content .cards .row-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
     }
 
     section#services .content .cards .card {
